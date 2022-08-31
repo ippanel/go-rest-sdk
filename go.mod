@@ -1,4 +1,4 @@
-module github.com/saberima/ippanel-go/v2
+module github.com/ippanel/go-rest-sdk/v2
 
 
 go 1.17

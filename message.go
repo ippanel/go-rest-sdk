@@ -32,20 +32,20 @@ const (
 
 // Message message model
 type Message struct {
-	MessageId      int64               `json:"message_id"`
-	Number         string              `json:"number"`
-	Message        string              `json:"message"`
-	State          string              `json:"state"`
-	Type           string              `json:"type"`
-	Valid          MessageConfirmState `json:"valid"`
-	Time           time.Time           `json:"time"`
-	TimeSend       time.Time           `json:"time_sent"`
-	RecipientCount int64               `json:"recipient_count"`
-	ExitCount      int64               `json:"exit_count"`
-	Part           int64               `json:"part"`
-	Cost           float64             `json:"cost"`
-	ReturnCost     float64             `json:"return_cost"`
-	Summary        string              `json:"summary"`
+	MessageId            int64               `json:"message_id"`
+	Number               string              `json:"number"`
+	Message              string              `json:"message"`
+	State                string              `json:"state"`
+	Type                 string              `json:"type"`
+	ConfirmState         MessageConfirmState `json:"valid"`
+	CreatedAt            time.Time           `json:"time"`
+	SentAt               time.Time           `json:"time_sent"`
+	RecipientCount       int64               `json:"recipient_count"`
+	ValidRecipientsCount int64               `json:"exit_count"`
+	Part                 int64               `json:"part"`
+	Cost                 float64             `json:"cost"`
+	ReturnCost           float64             `json:"return_cost"`
+	Summary              string              `json:"summary"`
 }
 
 // MessageRecipient message recipient status
