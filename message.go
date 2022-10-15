@@ -127,7 +127,7 @@ func (sms *Ippanel) Send(sender string, recipients []string, message string, sum
 		},
 	}
 
-	_res, err := sms.post("/sms/send/panel/single", "application/json", data)
+	_res, err := sms.post("/sms/send/webservice/single", "application/json", data)
 	if err != nil {
 		return 0, err
 	}
